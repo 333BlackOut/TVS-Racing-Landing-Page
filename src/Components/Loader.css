@@ -1,0 +1,34 @@
+@keyframes logoReveal {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+@keyframes loader {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+.loader-logo{
+  animation: logoReveal 6.5s ease-out forwards;
+}
+.loader-logo h1{
+  font-family: "Orbitron", sans-serif;
+}
+.loader{
+  animation: loader 2s 6.5s forwards;
+}

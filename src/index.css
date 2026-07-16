@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+#orientation-guard{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    color: white;
+    z-index: 99999;
+}
+
+@media (orientation: portrait) and (max-width: 1024px){
+    #orientation-guard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    #orientation-guard ~ #root{
+    display: none;
+}
+}
+
+#guard-content{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#guard-content h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+#rotate-icon{
+    width: 64px;
+    height: 64px;
+    filter: invert(1);
+}

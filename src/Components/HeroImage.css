@@ -1,0 +1,31 @@
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-heroFadeIn {
+  animation: heroFadeIn 0.8s ease-out;
+}
+
+@keyframes heroFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+.animate-heroFadeOut {
+  animation: heroFadeOut 0.8s ease-out;
+}
