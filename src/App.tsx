@@ -6,6 +6,7 @@ import Background from "./Components/Background";
 import Hero from "./Components/Hero";
 import SwitchVideo from "./Components/SwitchVideo";
 import Loader from "./Components/Loader";
+import "./App.css";
 
 const App = () => {
   const [playStatus, setPlayStatus] = useState(false);
