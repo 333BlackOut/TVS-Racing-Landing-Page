@@ -11,13 +11,13 @@
 
 @media (orientation: portrait) and (max-width: 1024px){
     #orientation-guard{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
     #orientation-guard ~ #root{
-    display: none;
+    display: none !important;
 }
 }
 
