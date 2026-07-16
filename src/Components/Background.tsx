@@ -2,6 +2,7 @@ import HeroImage from "./HeroImage";
 import HeroVideo from "../assets/tvs-racing/TVS-Racing-Video.mp4";
 import { Racers } from "../data/racers";
 import { useEffect, useState } from "react";
+import poster from "../../public/placeholder.webp";
 
 type Racer = (typeof Racers)[keyof typeof Racers];
 
@@ -31,6 +32,7 @@ const Background = ({ currentRacer, playStatus }: BackgroundProps) => {
   if (playStatus) {
     return (
       <video
+        poster={poster}
         src={HeroVideo}
         autoPlay
         loop

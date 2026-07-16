@@ -10,6 +10,7 @@ const Loader = () => {
           autoPlay
           muted
           playsInline
+          preload="auto"
           className="absolute w-full h-full inset-0 object-cover"
         ></video>
         <div className="loader-logo absolute inset-0 flex justify-center items-center">
